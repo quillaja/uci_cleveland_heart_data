@@ -24,7 +24,7 @@ feature| thalach | maximum heart rate achieved| integer ||
 feature| exang | exercise induced angina| categorical | 0 = no, 1 = yes  | 
 feature| oldpeak | ST depression induced by exercise relative to rest| float ||
 feature| slope | the slope of the peak exercise ST segment| categorical | 1 = upsloping, 2 = flat, 3 = downsloping | 
-feature| ca | number of major vessels (0-3) colored by [fluoroscopy](https://www.hopkinsmedicine.org/health/treatment-tests-and-therapies/fluoroscopy-procedure)| integer; contains 4 NULL values | |
+feature| ca | number of major vessels (0-3) colored by [fluoroscopy](https://www.hopkinsmedicine.org/health/treatment-tests-and-therapies/fluoroscopy-procedure)| integer |contains 4 NULL values |
 feature| thal | result of [myocardial perfusion scan](https://www.hopkinsmedicine.org/health/treatment-tests-and-therapies/myocardial-perfusion-scan-stress) | categorical | 3 = normal, 6 = fixed defect, 7 = reversable defect; contains 2 NULL values | This test locates heart muscle that does not absorb tracer dye and is therefore not getting blood flow. A reversible defect is not visible at rest but appears during exercise-induced stress. A fixed defect is visible both at rest and during exercise. _Note_: This field is often described as [thalassemia](https://en.wikipedia.org/wiki/Thalassemia), but I don't think that is correct.
 target/label| target | diagnosis of heart disease (angiographic disease status)| categorical | 0 = healthy/absence of heart disease, (1, 2, 3, 4) = sick/presence of heart disease | sometimes this field is called `num`
 
